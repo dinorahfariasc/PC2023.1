@@ -1,4 +1,4 @@
-#  # Jogo da adivinhação 
+ # Jogo da adivinhação 
 # from random import randint
 # number = randint(1,31)
 # men = "menor"
@@ -7,8 +7,7 @@
 # for i in range(5): 
 #   num = int(input("adivinhe um número entre 1 e 31: "))
 #   men = "menor" if (num > number) else "maior"
-#   print(number)
-  
+#   #print(number)
 #   if num == number: 
 #     print("você acertou") 
 #     break
