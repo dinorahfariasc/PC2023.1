@@ -22,8 +22,7 @@ if esc == 1:
 elif esc == 2:
     num = int(input("digite um numero: "))
     count = 0
-    for x in range(1,num):
+    for x in range(1, num+1):
         if num % x == 0:
             count += 1
-    print(f"o numero{num} é primo") if count == 2 else print(f"o numero {num} é composto")
-
+    print(f"o numero {num} é primo") if count == 2 else print(f"o numero {num} é composto")
