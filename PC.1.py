@@ -14,7 +14,7 @@
 #   else:
 #     print(f"você errou, o número era {men}")
 # #--------------------------------------------------------
-# # adicao de cores 
+# adicao de cores 
 # cor = []
 
 # print("digite a presença das cores")
@@ -53,10 +53,10 @@
 # if modo == 1:
 #   player = int(input('escolha sua opção \nPedra - digite 1\nPapel - digite 2\nTesoura - digite 3\n:'))
 #   res.append(player)
-#   pc =  3#randint(1,3)
+#   pc = randint(1,3)
 #   res.append(pc)
    
-#   print(res)
+#   #print(res)
   
 #   if res[0] - res[1] == 1: 
 #     print('o jogador venceu')
@@ -136,36 +136,21 @@
 #     print(f'({x[0]} ; {x[1]}]: '+'▓'*i)
 #   print(f'({intervalos[3][0]} ; {intervalos[3][1]}): '+'▓'*histo[3])
  
-        
 # =======================================================================================      
-# choque propagandas
-# usei como base as coordenadas x,y do canto inferior esquerdo, e superior direito
+# choque de propagandas 
 
-# propagandas = []
+# primeirox1 = float(input("Insira a coordenada x do primeiro pop-up: "))
+# primeirox2 = float(input("Insira a coordenada x2 do primeiro  pop-up: "))
+# primeiroy1 = float(input("Insira a coordenada y do primeiro pop-up: "))
+# primeiroy2 = float(input("Insira a coordenada y2 do primeiro  pop-up: "))
+# segundox1 = float(input("Insira a coordenada x do segundo pop-up : "))
+# segundox2 = float(input("Insira a coordenada x2 do segundo pop-up : "))
+# segundoy1 = float(input("Insira a coordenada y do segundo pop-up : "))
+# segundoy2 = float(input("Insira a coordenada y2 do segundo pop-up : "))
 
-# for x in range(2):
-#     prop1 = str(input("digite as coordenadas \ncanto esquerdo inferior: "))
-#     prop2 = input("digite as coordenadas \ncanto direito superior: ")
-#     propagandas.append(prop1)
-#     propagandas.append(prop2)
-   
-# ei1 = propagandas[0].split(',')
-# ds1 = propagandas[1].split(',')
-# ei2 = propagandas[2].split(',')
-# ds2 = propagandas[3].split(',')
-        
-
-
-# if int(ei2[0]) < int(ei1[0]) or int(ei2[0]) > int(ds1[0]):
-#     if int(ei2[1]) < int(ei1[1]) or int(ei2[1]) > int(ds1[1]):
-#      print("SEM CHOQUE DE PROPAGANDAS")
-# elif int(ei2[1]) > int(ds1[1]) or int(ei2[1]) < int(ei1[1]) and int(ds2[1]) < int(ei1[0]) or int(ds2[1]) > int(ds1[1]):
-#     print("SEM CHOQUE DE PROPAGANDA!")
+# if max(primeirox1, segundox1) < min(primeirox2, segundox2) and max(primeiroy1, segundoy1) < min(primeiroy2, segundoy2):
+#     print("Existe uma intersecção")
 # else:
-#     print("CHOQUE DE PROPAGANDAS")
-
-
-
-## print(propagandas)
+#     print("Não há intersecção") 
 
 
