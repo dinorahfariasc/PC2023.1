@@ -1,20 +1,32 @@
  # Jogo da adivinhação 
 # from random import randint
 # number = randint(1,31)
+# op = int(input("Digite o modo\n1 - fácil\n2 - difícil"))
 # men = "menor"
 
+# if op == 1:
+#      num = int(input("adivinhe um número entre 1 e 31: "))
+#      men = "menor" if (num > number) else "maior"
+#         #print(number)
+#      if num == number: 
+#         print("você acertou") 
+#      else:
+#         print(f"você errou, o número era {number}")
+        
+# elif op == 2:
+#     for i in range(5): 
+#         num = int(input("adivinhe um número entre 1 e 31: "))
+#         men = "menor" if (num > number) else "maior"
+#         # print(number)
+#         if num == number: 
+#             print("você acertou") 
+#             break
+#         else:
+#             print(f"você errou, o número era {men}")
+    
 
-# for i in range(5): 
-#   num = int(input("adivinhe um número entre 1 e 31: "))
-#   men = "menor" if (num > number) else "maior"
-#   #print(number)
-#   if num == number: 
-#     print("você acertou") 
-#     break
-#   else:
-#     print(f"você errou, o número era {men}")
-# #--------------------------------------------------------
-# adicao de cores 
+# #========================================================================
+# Adicao de cores 
 # cor = []
 
 # print("digite a presença das cores")
@@ -41,9 +53,8 @@
 #     return print("cor azul")
     
 # switch(cor)
-#----------------------------------------------------
-
-# jankenpo 
+#=====================================================================================
+# Jankenpo 
 # from random import randint
 # modo = int(input('escolha um modo de jogo \nRodada única digite 1 \nMelhor de cinco digite 2 \n:'))
 
@@ -102,8 +113,8 @@
 #   elif final.count(2) > final.count(1):
 #       print('pc ganhou')
 
-#-------------------------------------------------------------
-# histograma 
+#=====================================================================================
+# Histograma 
 # intervalos = [[0,2.5],[2.5,5],[5,7.5],[7.5,10]]
 # histo = [0,0,0,0]
 
