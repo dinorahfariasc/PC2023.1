@@ -22,29 +22,24 @@
 # testando combinacoes
 
 
-# ================================================
+# ==========================================================
 
 # pedaço de senha
-# repeticoes = []
 #
 # frase = input("digite a frase: ").replace(" ","")
-# senha = [0 for x in range(len(frase))]
-# c = 0
+# teste = ""
+# maior = ""
+#
 # for x in frase:
-#     repeticoes.append(frase.count(x))
-#
-# for l in repeticoes:
-#     if repeticoes[repeticoes.index(l)] == 1:
-#         if repeticoes[repeticoes.index(l) + 1] == 1:
-#             senha[c] += 1
+#     if x not in teste:
+#         teste += x
 #     else:
-#         c += 1
+#         if len(teste) > len(maior):
+#             maior = teste
+#         teste = x
+# if len(teste) > len(maior):
+#     maior = teste
 #
-# comeco = senha.index(max(senha))
+# 
+# print(maior)
 #
-# final = frase[comeco:max(senha)]
-# print(repeticoes)
-# print(senha)
-# print(final)
-
-
