@@ -9,7 +9,6 @@ if n_lemons == 1:
 if n_lemons == 2:
   camadas[0] = 2
   camadas.pop(2)
-  
 if n_lemons == 3:
   camadas[0] = 3
   camadas.pop(2)
@@ -19,8 +18,6 @@ if n_lemons == 4:
   camadas.pop(2)
 if n_lemons == 5:
   camadas[0] = 5
-
-# ==========================================
 if n_lemons >= 6 and n_lemons <= 10:
   camadas[0] = 6
   restantes -= 6
@@ -35,3 +32,24 @@ if n_lemons >= 6 and n_lemons <= 10:
 if sum(camadas) > 1:
   for x in camadas:
     print(x)
+
+
+# segunda tentativa ==================================================================================
+n_lemons = int(input())
+
+camadas = []
+maxBase= [10,6,3,1]
+
+for x in maxBase:
+  if n_lemons == x:
+    camadas.append(x)
+    n_lemons -= x
+    
+  if n_lemons - x > 1:
+    camadas.append(x)
+    camadas.append(n_lemons - x)
+    n_lemons -= x
+  
+ 
+for x  in camadas:
+  print(x)
